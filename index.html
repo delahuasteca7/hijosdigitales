@@ -7,6 +7,14 @@
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+    function toggleFAQ(id) {
+    const content = document.getElementById(`${id}-content`);
+    const icon = document.getElementById(`${id}-icon`);
+
+    content.classList.toggle('hidden');
+    icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+    }
     <style>
         body {
             font-family: 'Inter', sans-serif;
